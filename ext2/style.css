@@ -1,0 +1,31 @@
+.cp-layout-two-column {
+  display: grid;
+  grid-template-columns: 3fr 1fr; /* 横の設定 3:1 */
+  grid-template-rows: 44px minmax(300px, 1fr) 44px; /* たての設定 */
+  grid-row-gap: 30px; /* rowとrowのスペースを設定 */
+}
+
+.cp-layout-two-column__header {
+  grid-column: 1/3;
+  display: flex; /* 文字列の高さ調整に必要 */
+  align-items: center;
+  padding: 0 15px;
+  border-bottom: 1px solid black;
+}
+
+.cp-layout-two-column__main {
+  padding: 0 15px;
+}
+
+.cp-layout-two-column__side {
+  padding: 0 15px;
+  border-left: 1px solid black;
+}
+
+.cp-layout-two-column__footer {
+  grid-column: 1/3;
+  display: flex; /* 文字列の高さ調整に必要 */
+  align-items: center;
+  padding: 0 15px;
+  border-top: 1px solid black;
+}
