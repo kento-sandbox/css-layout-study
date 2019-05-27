@@ -1,0 +1,16 @@
+.cp-layout-items-list {
+  display: flex;
+  /* wrap > 折り返し */
+  /* nowrap > 折り返ししない */
+  /* wrap-reverse > 折り返しかつ、反転 */
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 30px 0;
+  text-decoration: underline;
+  list-style: none;
+}
+
+.cp-layout-items-list>* {
+  margin: 5px 15px 5px 0;
+}
