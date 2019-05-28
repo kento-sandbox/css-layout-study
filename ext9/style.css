@@ -1,0 +1,22 @@
+.cp-layout-items-tag {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 30px 0;
+  list-style: none;
+}
+
+.cp-layout-items-tag>* {
+  display: flex;
+  justify-content: flex-start;
+  padding: 5px 8px;
+  margin: 5px 15px 5px 0;
+  border: 1px solid #999;
+  border-radius: 3px;
+}
+
+.cp-layout-items-tag>*::before {
+  display: block;
+  content: "#";
+}
