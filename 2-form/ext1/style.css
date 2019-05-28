@@ -1,0 +1,29 @@
+.cp-form__item {
+  padding: 15px 0;
+}
+
+.cp-form__input-wrap {
+  position: relative;
+  display: inline-block;
+  border: 1px solid black;
+}
+
+.cp-form__input-label {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 100%;
+}
+
+.cp-form__input {
+  /* ブラウザデフォルトスタイルの無効化 */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 44px;
+  padding: 0 8px 0 32px;
+  background-color: #fff;
+  border: 0;
+}
