@@ -1,0 +1,30 @@
+/* .cp-form__item {} */
+
+.cp-form__switch-wrap {
+  display: inline-flex;
+  justify-content: flex-start;
+}
+
+.cp-form__hidden {
+  /* 以下の設定値でinput自体を見えなくする */
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
+.cp-form__switch-label {
+  padding: 8px;
+  border: 1px solid #000;
+}
+
+.cp-form__switch-label:last-child {
+  border-left: 0;
+}
+
+.cp-form__switch:checked+.cp-form__switch-label {
+  color: #fff;
+  background-color: #000;
+}
