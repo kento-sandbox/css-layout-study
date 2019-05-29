@@ -1,0 +1,45 @@
+/* FLOCSSの規約通り作成しているが必要はない */
+.cp-form__item {}
+
+/* FLOCSSの規約通り作成しているが必要はない */
+.cp-form__radio-wrap {}
+
+.cp-form__hidden {
+  /* 以下の設定値でinput自体を見えなくする */
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
+.cp-form__radio-label {
+  position: relative;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.cp-form__radio-label::before {
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin: 0 5px 5px 0;
+  border: 1px solid black;
+  border-radius: 50%;
+  content: "";
+}
+
+.cp-form__radio:checked+.cp-form__radio-label::after {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  display: block;
+  width: 8px;
+  height: 8px;
+  content: "";
+  background-color: #000;
+  border: 1px solid black;
+  border-radius: 50%;
+}
