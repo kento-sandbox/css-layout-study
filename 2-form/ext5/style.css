@@ -1,0 +1,66 @@
+/* .cp-form__item {} */
+
+.cp-form__hidden {
+  /* 以下の設定値でinput自体を見えなくする */
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
+/* .cp-form__check-wrap {} */
+
+.cp-form__check-label {
+  position: relative;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.cp-form__check-label::before {
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin: 0 5px 5px 0;
+  border: 1px solid black;
+  content: "";
+}
+
+.cp-form__check:checked+.cp-form__check-label::after {
+  position: absolute;
+  top: 3px;
+  left: 5px;
+  display: block;
+  width: 4px;
+  height: 8px;
+  border: 2px solid black;
+  border-top: 0;
+  border-left: 0;
+  content: "";
+  transform: rotate(45deg);
+}
+
+.cp-form__check-border+.cp-form__check-label {
+  padding: 8px;
+  border: 1px solid black;
+  transition: 0.3s;
+}
+
+.cp-form__check-border:checked+.cp-form__check-label {
+  color: #fff;
+  background-color: #000;
+}
+
+.cp-form__check-border:checked+.cp-form__check-label::before {
+  visibility: hidden;
+}
+
+.cp-form__check-border:checked+.cp-form__check-label::after {
+  top: 10px;
+  left: 13px;
+  width: 5px;
+  height: 10px;
+  border-color: #fff;
+}
