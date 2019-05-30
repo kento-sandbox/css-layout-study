@@ -31,6 +31,8 @@
 }
 
 .cp-form__check:checked+.cp-form__check-label::after {
+  /* 縦8px、横４pxの長方形を作成して、上と左のborderを消す。 */
+  /* 下と右のみのボックスを45℃傾けてチェックスタイルを作成 */
   position: absolute;
   top: 3px;
   left: 5px;
